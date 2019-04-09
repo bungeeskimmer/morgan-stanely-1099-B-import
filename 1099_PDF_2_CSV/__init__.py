@@ -57,8 +57,8 @@ for j in range(8, 13):
 
                     num_shares_decimal = records[i + 1].find('.')
                     sale["Description"] = description + ' ' + records[i + 1][:num_shares_decimal+4]
-                    sale[ "Date Sold"] = parts[0][:8]
-                    sale["Date Acquired"] =  parts[0][8:]
+                    sale["Date Acquired"] = parts[0][:8]
+                    sale["Date Sold"]=  parts[0][8:]
 
                 else:
                     sale["Description"] = description + ' ' + records[i + 1][:5]
